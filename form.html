@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h4>Formularze:</h4>
+
+    <form action="login.php" method="post">
+        <fieldset>
+            <legend>Logowanie</legend>
+            <p>
+                <label> Wpisz nazwe użytkownika
+                    <input type="text" name="user_name" id="username" required placeholder="Wpisz nazwe użytkownika">
+                </label>
+            </p>
+            <p>
+                    <label for="password">Wpisz hasło:</label>
+                    <input type="password" name="password" id="password" required>
+            </p>
+            <p>
+                <button type="submit">Zaloguj</button>
+                <button type="reset">Resetuj</button>
+            </p>
+        </fieldset>
+
+    </form>
+
+    <form action="register.asp" method="post" enctype="multipart/form-data">
+    <fieldset>
+        <legend>Rejestracja</legend>
+        <input type="hidden" value="sdasdasda" name="hidden_value" >
+        <p>
+            <label> Wpisz nazwe użytkownika
+                <input minlength="5" maxlength="25" type="text" name="user_name" id="username" required placeholder="Wpisz nazwe użytkownika">
+            </label>
+        </p>
+        <p>
+            <label> E-mail
+                <input type="email" name="email" id="email" required placeholder="Wpisz E-mail">
+            </label>
+        </p>
+        <p>
+            <label for="password">Wpisz hasło:</label>
+            <input type="password" name="password" id="password" required>
+        </p>
+        <p>
+            <label for="password2">Powtórz hasło:</label>
+            <input type="password2" name="password2" id="password" required>
+        </p>
+        <p>
+            <label for="age">Wiek:</label>
+            <input type="number" name="age" id="age" min="15"required>
+        </p>
+        
+        <p>
+            <label for="description">Opis użytkownika:</label><br>
+            <textarea name="description" id="description" cols="30" rows="10"></textarea>
+        </p>
+        <p>
+            <label for="avataring"> Wybierz avatar:</label>
+            <input type="file" name="avatar" id="avataring" accept="image.png, image/jpeg">
+        </p>
+        <p>
+            Ulubiony kolor:
+            <input type="radio" name="color" value="red" id="red">
+            <label for="red">red</label>
+            <input type="radio" name="color" value="green" id="green">
+            <label for="green">green</label>
+            <input type="radio" name="color" value="blue" id="blue">
+            <label for="blue">blue</label>
+        </p>
+        <p>
+            Marka:
+            <input type="checkbox" name="brand" value="Audi" id="Audi">
+            <label for="Audi">Audi</label>
+            <input type="checkbox" name="brand" value="Mercedes" id="Mercedes">
+            <label for="Mercedes">Mercedes</label>
+            <input type="checkbox" name="brand" value="BMW" id="BMW">
+            <label for="BMW">BMW</label>
+        </p>
+        <p>
+            <label for="datetime">Data zakupu auta</label>
+            <input id="datetime" type="datetime-local">
+        </p>
+        <p>
+            <label for="carcolor">Kolor auta:</label>
+            <input type="color" name="carcolor" id="carcolor">
+        </p>
+        <p>
+            <label for="tel">Telefon:</label>
+            <input type="tel" name="tel" id="tel">
+        </p>
+        <p>
+            <label for="distance">Przebieg w tys. km:</label>
+            <input type="range" name="distance" id="url">
+        </p>
+        <p>
+            <label for="url">Strona aukcji:</label>
+            <input type="url" name="urladdr" id="distance" min="1" max="100" step="1">
+        </p>
+        <p>
+            <label for="theme">Templatka forum:</label>
+            <select type="theme" id="theme">
+                <option value="white"> Biały</option>
+                <option value="black"> Czarny</option>
+            </select>
+        </p>
+        <p>
+            <button type="submit">Zaloguj</button>
+            <button type="reset">Resetuj</button>
+        </p>
+    </fieldset>
+    </form>
+</body>
+</html>

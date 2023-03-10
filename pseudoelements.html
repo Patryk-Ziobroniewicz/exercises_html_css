@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ::selection {
+            background-color: orange;
+        }
+        article::first-letter {
+            font-weight: bold;
+        }
+
+        article::first-line {
+            text-decoration: underline;
+        }
+
+        article::before {
+            content: "@" ;
+            border: 2px dotted red;
+        }
+
+        article:last-child::after {
+            content: "HOT";
+            font-weight: bold;
+            color: red;
+
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis labore dolor quidem qui reiciendis nulla magni velit? Sed magnam repellat aperiam officia. Fugit, iusto optio porro vel temporibus facilis rerum!</article>
+        <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis labore dolor quidem qui reiciendis nulla magni velit? Sed magnam repellat aperiam officia. Fugit, iusto optio porro vel temporibus facilis rerum!</article>
+        <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis labore dolor quidem qui reiciendis nulla magni velit? Sed magnam repellat aperiam officia. Fugit, iusto optio porro vel temporibus facilis rerum!</article>
+        <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis labore dolor quidem qui reiciendis nulla magni velit? Sed magnam repellat aperiam officia. Fugit, iusto optio porro vel temporibus facilis rerum!</article>
+        <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis labore dolor quidem qui reiciendis nulla magni velit? Sed magnam repellat aperiam officia. Fugit, iusto optio porro vel temporibus facilis rerum!</article>
+        <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis labore dolor quidem qui reiciendis nulla magni velit? Sed magnam repellat aperiam officia. Fugit, iusto optio porro vel temporibus facilis rerum!</article>
+            
+    </div>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compa
+    tible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a:link {
+            color: teal;
+        }
+
+        a:visited {
+            color: silver;
+        }
+
+        a:hover {
+            background-color: yellow;
+            color: red;
+        }
+
+        a:active {
+            color: green;
+        }
+
+        input[type="checkbox"]:checked + label {
+            font-weight: bold;
+            color: red;
+        }
+
+        input[type="checkbox"]:checked {
+            box-shadow: 0 0 0 3px red;
+        }
+        input[type="text"]:disabled {
+
+        }
+
+        p:first-child{
+            color:red
+        }
+
+        P:last-child{
+            color: green;
+        }
+
+        p:nth-child(even) {
+            font-weight: bold;
+        }
+
+        p:nth-child(odd) {
+            font-style: italic;
+        }
+
+        p:nth-child(5) {
+            background-color: red;
+        }
+
+        p:nth-child(3n) {
+            border: 2px solid black;
+        }
+
+        input:focus {
+            background-color: lightgreen;
+        }
+
+        p:not(.intro) {
+            text-decoration: underline;
+        }
+
+        p.intro:not(.box) {
+            background-color:  lightgreen;
+        }
+
+        p.intro:not(.content):not(.end) {
+            font-size: 13px;
+        }
+
+    </style>
+</head>
+<body>
+    <for action="">
+        <input type="checkbox" name="system" id="android">
+        <label for="android">Android</label>
+        <input type="checkbox" name="system" id="ios">
+        <label for="ios">IOS</label>
+        <input disabled type="text" value="jakiś tekst">
+        <input type="text" value="tekst">
+    </form>
+    <ul>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Regulamin</a></li>
+        <li><a href="#">TOS</a></li>
+        <li><a href="https://mozilla.org">mozilla</a></li>
+    </ul>
+    <div>
+        <p>Lorem ipsum dolor sit ame</p>
+        <p>Lorem ipsum dolor sit ame</p>
+        <p class="intro">Lorem ipsum dolor sit ame</p>
+        <p class="intro box">Lorem ipsum dolor sit ame</p>
+        <p class="content">Lorem ipsum dolor sit ame</p>
+        <p class="end">Lorem ipsum dolor sit ame</p>
+        <p>Lorem ipsum dolor sit ame</p>
+    </div>
+</body>
+</html>

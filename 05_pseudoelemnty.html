@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p::first-letter {
+            font-size: 20px;
+            color: darkgray;
+        }
+
+        p::first-line {
+            font-weight: bold;
+        }
+
+        ::selection {
+            color: red;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        li::before {
+            content: "→ 🤨";
+        }
+
+        .best::before {
+            content: "🤨";
+        }
+
+        li:after {
+            content: "!";
+            color: red;
+        }
+    </style>
+    <script>
+       var canPlayMp3 = !!myAudio.canPlayType && "" != myAudio.canPlayType('audio/mpeg');
+       var canPlayOgg = !!myAudio.canPlayType && "" != myAudio.canPlayType('audio/ogg; codecs="vorbis"');
+
+    </script>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt, tempora ad est eveniet officiis molestiae porro enim quo voluptas aliquid!</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <script>
+        var canPlayMp3 = !!myAudio.canPlayType && "" != myAudio.canPlayType('audio/mpeg');
+     </script>
+    <audio controls preload="auto">
+        <source src="ngt.mp3" />
+      </audio>
+
+    <ul>
+        <li>jeden</li>
+        <li class="best">dwa</li>
+        <li>trzy</li>
+    </ul>
+    
+</body>
+</html>

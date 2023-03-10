@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .send {
+            width: 100px;
+            background: red;
+            border: 3px solid black;
+            outline: none;
+            cursor: pointer;
+        }
+        .send:active {
+            font-weight: bold;
+        }
+
+        .send:hover {
+            background-color: gold;
+        }
+        .send:focus {
+            border: 3px solid coral;
+        }
+
+        .send:disabled {
+            opacity: 0.4;
+        }
+    </style>
+</head>
+<body>
+    <button disabled class="send">zapisz</button>
+    <button class="send">zapisz</button>
+    <button class="send">zapisz</button>
+    <button class="send">zapisz</button>
+</body>
+</html>
